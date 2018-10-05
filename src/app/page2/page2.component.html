@@ -1,0 +1,96 @@
+
+
+<form class="container" 
+  *ngIf= "showMob; else elseBlock"
+  >
+    <div class="row">
+
+        <div class="col-sm-12 col-md-12 col-lg-12" id="instruction"> Thank you for your Registered Mobile Number. Please also help us with one of the following details and click 'Submit'.
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-sm">
+            <div class="form-group">
+                <input type="number" class="form-control" id="registeredMobileNumber" aria-describedby="emailHelp" placeholder="Customer ID">
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row or">
+        <div class="col-sm">
+            OR
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-sm">
+            <div class="form-group">
+                <input type="email" class="form-control" id="CustomerId" aria-describedby="emailHelp" placeholder="DOB (dd/mm/yy)">
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="col-sm">
+        <a routerLink="/page3">
+            <button type="button" class="btn btn-primary">Submit</button>
+        </a>
+    </div>
+</form>
+
+<ng-template #elseBlock>
+    <form class="container">
+      <div class="row">
+  
+          <div class="col-sm-12 col-md-12 col-lg-12" id="instruction"> Thank you for your Customer ID. Please also help us with one of the following details and click 'Submit'.
+          </div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <div class="row">
+          <div class="col-sm">
+              <div class="form-group">
+                  <input type="number" class="form-control" id="registeredMobileNumber" aria-describedby="emailHelp" placeholder="DOB (dd/mm/yy)">
+              </div>
+          </div>
+      </div>
+  
+      <br>
+  
+      <div class="row or">
+          <div class="col-sm">
+              OR
+          </div>
+      </div>
+  
+      <br>
+  
+      <div class="row">
+          <div class="col-sm">
+              <div class="form-group">
+                  <input type="email" class="form-control" id="CustomerId" aria-describedby="emailHelp" placeholder="Aadhar Number (12 Digits)">
+              </div>
+          </div>
+  
+      </div>
+  
+  
+      <div class="col-sm">
+          <a routerLink="/page3">
+              <button type="button" class="btn btn-primary">Submit</button>
+          </a>
+      </div>
+
+    </form>
+</ng-template>

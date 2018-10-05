@@ -1,0 +1,37 @@
+
+.container{
+    text-align: left;
+
+    width: 70%;
+    height: 52%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+mat-form-field{
+    display: inline-block;
+    width: 70%;  
+}
+/* div.or{
+    text-align: left;
+} */
+.form-group{
+    margin: 0px !important;
+}
+#instruction{
+    font-size:12px;
+    color:gray;
+    text-align: center;
+}
+button{
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
+}
+
+
+

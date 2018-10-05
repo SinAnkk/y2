@@ -1,0 +1,31 @@
+.container{
+    text-align: center;
+
+    width: 82%;
+    height: 40%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+mat-form-field{
+    display: inline-block;
+    width: 70%;  
+}
+/* div.or{
+    text-align: left;
+} */
+form-group{
+    margin: 0px !important;
+}
+#instruction{
+    font-size:12px;
+    color:gray;
+}
+.form-control{
+    width: 50%;
+    display: inline-block;
+}

@@ -1,0 +1,83 @@
+<!-- <div class="container">
+
+    <h5>Please enter one of the below details and continue.</h5>
+
+    <form class="example-form">
+
+        <div class="row">
+            <mat-form-field class="example-full-width">
+                <textarea matInput placeholder="Registered Mobile Number"></textarea>
+            </mat-form-field>
+
+            <a routerLink="/page2" [queryParams]="{loginBy: 'mobileNo'}"><button mat-raised-button>Click me!</button></a>
+        </div>
+
+        <p>OR</p>
+
+        <div class="row">
+            <mat-form-field class="example-full-width">
+                <textarea matInput placeholder="Customer ID"></textarea>
+            </mat-form-field>
+
+            <a routerLink="/page2" [queryParams]="{loginBy: 'CustomerId'}"><button mat-raised-button>Click me!</button></a>
+        </div>
+    </form>
+
+</div> -->
+
+<form class="container">
+
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12" id="instruction"> Please enter one of the following details and continue
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-sm">
+            <div class="form-group">
+                <label for="registeredMobileNumber">Registered Mobile Number</label>
+                <input type="number" class="form-control" id="registeredMobileNumber" aria-describedby="emailHelp" placeholder="Registered Mobile Number">
+            </div>
+        </div>
+
+        <div class="col-sm">
+            <a routerLink="/page2" [queryParams]="{loginBy: 'mobileNo'}">
+                <button type="button" class="btn btn-primary">Continue with Mobile Number</button>
+            </a>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row or">
+        <div class="col-sm">
+            OR
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-sm">
+            <div class="form-group">
+                <label for="CustomerId">Customer ID</label>
+                <input type="email" class="form-control" id="CustomerId" aria-describedby="emailHelp" placeholder="Customer ID">
+            </div>
+        </div>
+
+        <div class="col-sm">
+            <a routerLink="/page2" [queryParams]="{loginBy: 'CustomerId'}">
+                <button type="button" class="btn btn-primary">Continue with Customer ID</button>
+            </a>
+        </div>
+
+    </div>
+
+    
+</form>
+
+<form>
+      </form>
